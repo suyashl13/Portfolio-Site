@@ -1,7 +1,9 @@
-import { Alert, AlertDescription, AlertIcon, AlertTitle, CloseButton, Link } from '@chakra-ui/react';
+import { Alert, AlertIcon, AlertTitle, Center, CloseButton } from '@chakra-ui/react';
 import './App.css';
-import Landing from './components/landing/Landing';
+import SkillBadge from './components/general/SkillBadge';
+import Landing from "./components/Landing"
 import Navbar from './components/Navbar';
+import Skills from './components/Skills';
 
 function App() {
   return (
@@ -9,11 +11,15 @@ function App() {
       <Alert status='warning'>
         <AlertIcon />
         <AlertTitle mr={2}>Site under construction.</AlertTitle>
-        <AlertDescription>Site is under development.<Link href="mailto:admin@hiresuyash.com"> Click here</Link> to contact us.</AlertDescription>
         <CloseButton position='absolute' right='8px' top='8px' />
       </Alert>
       <Navbar />
       <Landing />
+      <Center>
+        <SkillBadge />
+      </Center>
+      <Skills />
+      <br />
     </>
   );
 }
