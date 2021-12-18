@@ -27,11 +27,13 @@ export default function Landing() {
           <Text fontSize={{ base: "3xl", lg: "5xl" }} fontWeight={900}>
             Full Stack Developer
           </Text>
-          <br />
-          Hello, I am full stack developer based in Pune. I love to work with
-          startups and serve them with an amazing piece of software. Every
-          opportunity is a golden chance for me hence I give my best in terms of
-          UI, performance and security to deliver perfect applications.
+
+          <Text mt="4px" textColor={"teal"}>
+            Hello, I am full stack developer based in Pune. I love to work with
+            startups and serve them with an amazing piece of software. Every
+            opportunity is a golden chance for me hence I give my best in terms
+            of UI, performance and security to deliver perfect applications.
+          </Text>
         </Box>
       </Flex>
     </Container>

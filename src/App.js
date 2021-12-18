@@ -1,9 +1,8 @@
-import { Alert, AlertIcon, AlertTitle, Center, CloseButton } from '@chakra-ui/react';
+import { Alert, AlertIcon, AlertTitle, CloseButton } from '@chakra-ui/react';
 import './App.css';
-import SkillBadge from './components/general/SkillBadge';
+import Certifications from './components/Certifications';
 import Landing from "./components/Landing"
 import Navbar from './components/Navbar';
-import Skills from './components/Skills';
 
 function App() {
   return (
@@ -15,10 +14,7 @@ function App() {
       </Alert>
       <Navbar />
       <Landing />
-      <Center>
-        <SkillBadge />
-      </Center>
-      <Skills />
+      <Certifications />
       <br />
     </>
   );

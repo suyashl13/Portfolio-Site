@@ -1,7 +1,7 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
-
+@import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
 
 .site-brand {
-    text-transform: uppercase;
-    font-family: 'Roboto', sans-serif;
+  text-transform: uppercase;
+  font-family: "Roboto", sans-serif;
 }
+

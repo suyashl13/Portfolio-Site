@@ -22,14 +22,16 @@ export default function Navbar() {
     color: colorMode === "light" ? "black" : "teal",
   };
 
+  const menuOptions = [
+    { title: "Home" },
+    { title: "Certifications" },
+    { title: "Portfolio" },
+    { title: "Contact" },
+  ];
+
   const menuNavs = (
     <HStack>
-      {[
-        { title: "Home" },
-        { title: "Portfolio" },
-        { title: "Certifications" },
-        { title: "Contact" },
-      ].map((e) => {
+      {menuOptions.map((e) => {
         return (
           <>
             <Button bg="transparent" {...navlinkProps}>
@@ -89,12 +91,7 @@ export default function Navbar() {
             <hr style={{ marginTop: "8px" }} />
           </DrawerHeader>
           <DrawerBody>
-            {[
-              { title: "Home" },
-              { title: "Portfolio" },
-              { title: "Certifications" },
-              { title: "Contact" },
-            ].map((e) => {
+            {menuOptions.map((e) => {
               return (
                 <>
                   <Button bg="transparent" {...navlinkProps}>
