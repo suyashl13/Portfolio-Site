@@ -1,4 +1,4 @@
-import { Code, Container, SimpleGrid } from "@chakra-ui/react";
+import { Code, SimpleGrid } from "@chakra-ui/react";
 import React from "react";
 
 export default function Skills() {
