@@ -71,7 +71,9 @@ export default function Certifications() {
               <Text fontSize="8xl" color="teal">
                 8
               </Text>
-              <Text color="teal"> Certifications</Text>
+              <Text fontSize="lg" fontWeight="bold" color="teal">
+                Certifications
+              </Text>
             </Box>
           </GridItem>
           <GridItem
@@ -95,6 +97,7 @@ export default function Certifications() {
                   lg: "bolder",
                 }}
                 marginLeft={{ lg: "16px" }}
+                margin={{ sm: "8px", base: "8px", md: "8px", lg: "0px" }}
               >
                 I am a student and freelancer having 2 years of experience in
                 technologies like React.js, Node.js, Django, Native Android
