@@ -11,7 +11,7 @@ export default function Skills() {
     { title: "UX/UI" },
   ];
   return (
-    <SimpleGrid columns={{ base: 2, md: 5, lg: 6 }} spacing={1}>
+    <SimpleGrid columns={{ base: 2, md: 5, lg: 6 }} spacing={2}>
       {skills.map((skill, i) => (
         <Code
           border="1px"
@@ -19,7 +19,7 @@ export default function Skills() {
           borderStyle="dashed"
           borderColor="gray.300"
           borderRadius="4px"
-          padding="4px"
+          padding="2px"
         >
           {skill.title}
         </Code>
@@ -27,3 +27,4 @@ export default function Skills() {
     </SimpleGrid>
   );
 }
+

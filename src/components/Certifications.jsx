@@ -60,7 +60,7 @@ export default function Certifications() {
   return (
     <Box>
       <Container
-        maxW={{ base: "container.sm", md: "container.md", lg: "container.lg" }}
+        maxW={{ base: "container.sm", md: "container.md", lg: "container.xl" }}
         marginTop={{ lg: "4rem", base: "2rem" }}
       >
         <br />
