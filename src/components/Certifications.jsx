@@ -51,7 +51,7 @@ export default function Certifications() {
       link: "https://courses.learncodeonline.in/learn/certificate/1490773-35916",
     },
     {
-      title: "React & django Integration",
+      title: "React-Django Integration",
       icon: <FaCode fontSize="4rem" color="#718096" />,
       link: "https://courses.learncodeonline.in/learn/certificate/1490773-71676",
     },

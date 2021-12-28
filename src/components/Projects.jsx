@@ -56,6 +56,9 @@ export default function Projects() {
           <Project {...e} />
         ))}
       </SimpleGrid>
+      <Box mt='5rem'>
+        <hr />
+      </Box>
     </Container>
   );
 }
@@ -76,20 +79,14 @@ function Project({ title, link, image }) {
     >
       <Center display="flex" justifyContent={"center"} flexDirection="column">
         <Image
-        backgroundColor='white'
-          filter="grayscale(90%)"
+          backgroundColor="white"
+          filter="grayscale(100%)"
           borderRadius={200}
-          height={70}
+          height={46}
           src={image}
-          shadow="0px 4px 10px #718096"
+          shadow="0.4px 2px 3px #718096"
         />
-        <Text
-          color="#718096"
-          href={link}
-          fontWeight="bold"
-          marginTop="16px"
-          fontSize="xl"
-        >
+        <Text color="#718096" href={link} marginTop="16px">
           {title}
         </Text>
       </Center>
