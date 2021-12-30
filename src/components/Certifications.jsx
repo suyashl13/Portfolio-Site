@@ -69,7 +69,7 @@ export default function Certifications() {
           <GridItem colSpan={{ sm: 5, md: 1, lg: 1, base: 5 }}>
             <Box display="flex" flexDirection="column" alignItems="center">
               <Text fontSize="8xl" color="teal">
-                8
+                {certificates.length}
               </Text>
               <Text fontSize="lg" fontWeight="bold" color="teal">
                 Certifications

@@ -14,10 +14,13 @@ import React from "react";
 
 export default function ContactForm() {
   return (
-    <Container maxW="container.md" mt="3.4rem" mb="3.2rem">
-      <Center>
-        <Text fontSize="4xl" fontWeight="bolder" mb="2rem">
+    <Container maxW={{ base: "container.sm", md: "container.sm", lg: 'container.md' }} mt="3.4rem" mb="3.2rem">
+      <Center display='flex' flexDir='column' mb="2.7rem">
+        <Text fontSize="3xl" fontWeight="bolder">
           Contact Us
+        </Text>
+        <Text fontWeight='light' color='teal'>
+          We'll help you out to build amazing piece of software.
         </Text>
       </Center>
       <FormControl>
@@ -46,6 +49,7 @@ export default function ContactForm() {
         <Box mb="30px">
           <FormLabel htmlFor="fName">Describe your project</FormLabel>
           <Textarea
+            noOfLines={4}
             type="text"
             placeholder="I need an ERP system for my business."
             variant="filled"

@@ -61,16 +61,16 @@ export default function Navbar() {
       <Center h="90px">
         <Box
           width={[
-            "90%", // 0-30em
-            "90%", // 30em-48em
-            "80%", // 48em-62em
-            "70%", // 62em+
+            "90%",
+            "90%",
+            "80%",
+            "70%",
           ]}
         >
           <Flex justifyContent="space-between">
             <Flex flexDirection="column" alignItems="center">
               <Text fontSize="2xl" textTransform="uppercase">
-                Hiresuyash
+                {"<Suyash Lawand />"}
               </Text>
               <Text fontWeight="light" opacity="0.6" fontSize="">
                 Portfolio Site

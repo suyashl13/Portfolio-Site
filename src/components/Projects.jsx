@@ -2,6 +2,8 @@ import {
   Box,
   Center,
   Container,
+  Grid,
+  GridItem,
   Image,
   SimpleGrid,
   Text,
@@ -40,22 +42,62 @@ export default function Projects() {
       maxW={{ base: "container.sm", md: "container.md", lg: "container.xl" }}
       marginTop="3.4rem"
     >
-      <Text
-        color="teal"
-        textAlign={{ base: "center", lg: "start", md: "start" }}
-        letterSpacing="1.8px"
-        fontSize="3xl"
-        textTransform="uppercase"
-        fontWeight="bold"
-      >
-        My Projects
-      </Text>
-      <br />
-      <SimpleGrid columns={{ base: 2, lg: 4, md: 4 }} spacing="2">
-        {projects.map((e) => (
-          <Project {...e} />
-        ))}
-      </SimpleGrid>
+      <hr />
+      <Grid templateColumns="repeat(5, 1fr)" gap={2}>
+        <GridItem colSpan={{ sm: 5, md: 1, lg: 1, base: 5 }}>
+          <Box display="flex" flexDirection="column" alignItems="center">
+            <Text fontSize="8xl" color="teal">
+              {projects.length}
+            </Text>
+            <Text fontSize="lg" fontWeight="bold" color="teal">
+              Projects
+            </Text>
+          </Box>
+        </GridItem>
+        <GridItem
+          colSpan={{ base: 5, sm: 5, md: 4, lg: 4 }}
+          display="flex"
+          justifyItems="center"
+        >
+          <Center>
+            <Text
+              textAlign={{
+                sm: "center",
+                md: "left",
+                lg: "left",
+                base: "center",
+              }}
+              fontSize={{ base: "md", md: "lg", lg: "lg", sm: "md" }}
+              fontWeight={{
+                base: "regular",
+                sm: "regular",
+                md: "bolder",
+                lg: "bolder",
+              }}
+              marginLeft={{ lg: "16px" }}
+              margin={{ sm: "8px", base: "8px", md: "8px", lg: "0px" }}
+            >
+              I love to build secure and fast applications. Here are some personal and client projects done by me.
+            </Text>
+          </Center>
+        </GridItem>
+        <GridItem colSpan={{ base: 0, md: 1, lg: 1 }} />
+        <GridItem
+          colSpan={{ base: 5, md: 4, lg: 4 }}
+          display="flex"
+          justifyItems="center"
+        >
+          <SimpleGrid
+            position="relative"
+            w="100%"
+            columns={{ base: 2, sm: 3, md: 3, lg: 4 }}
+            gap="3">
+            {projects.map((e) => (
+              <Project {...e} />
+            ))}
+          </SimpleGrid>
+        </GridItem>
+      </Grid>
       <Box mt='5rem'>
         <hr />
       </Box>
