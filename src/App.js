@@ -1,4 +1,3 @@
-import { Alert, AlertIcon, AlertTitle, CloseButton } from '@chakra-ui/react';
 import './App.css';
 import Certifications from './components/Certifications';
 import ContactForm from './components/ContactForm';
