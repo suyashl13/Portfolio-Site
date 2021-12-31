@@ -19,7 +19,7 @@ export default function ContactForm() {
         <Text fontSize="3xl" fontWeight="bolder">
           Contact Us
         </Text>
-        <Text fontWeight='light' color='teal'>
+        <Text fontWeight='light' color='teal' textAlign='center'>
           We'll help you out to build amazing piece of software.
         </Text>
       </Center>

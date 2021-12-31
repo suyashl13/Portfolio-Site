@@ -119,7 +119,7 @@ function Project({ title, link, image }) {
       borderRadius="2px"
       textAlign="center"
     >
-      <Center display="flex" justifyContent={"center"} flexDirection="column">
+      <Center display="flex" justifyContent="center" flexDirection="column">
         <Image
           backgroundColor="white"
           filter="grayscale(100%)"
