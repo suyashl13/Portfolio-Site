@@ -10,13 +10,6 @@ import Projects from './components/Projects';
 function App() {
   return (
     <>
-      {/* <Alert status='warning' id='warning'>
-        <AlertIcon />
-        <AlertTitle mr={2}>Site under construction.</AlertTitle>
-        <CloseButton position='absolute' right='8px' top='8px' onClick={() => {
-          document.getElementById('warning').remove();
-        }} />
-      </Alert> */}
       <Navbar />
       <Landing />
       <Certifications />
